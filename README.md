@@ -38,9 +38,22 @@ And then to start the server, it's
 bin/neo4j start
 ```
 
+Installing neo4j I had some problems and could fix it only through steps in https://askubuntu.com/questions/1044449/install-neo4j-ubuntu-18-04
+```
+sudo wget --no-check-certificate -O - https://debian.neo4j.org/neotechnology.gpg.key | sudo apt-key add -
+sudo echo 'deb http://debian.neo4j.org/repo stable/' > /etc/apt/sources.list.d/neo4j.list
+# actually the above line may have failed and instead I simply added the "deb.." manually to new file neo4j.lis
+sudo apt update
+sudo apt install neo4j
+```
+After that I could run
+```
+sudo service neo4j start
+```
+
 I had to separately install npm
 ```
-sudo apt instlal npm
+sudo apt install npm
 ```
 after which
 ```
@@ -50,13 +63,14 @@ results in
 ```
 3.5.2
 ```
-Install pm2:
+Install pm2. I first tried to this first without 'sudo' and it failed with permission errors.
 ```
-npm install pm2@latest -g
+sudo npm install pm2@latest -g
 ```
 I saw some warnings but they are only warnings, not errors
 ```
 npm WARN optional Skipping failed optional dependency /pm2/chokidar/fsevents:
 npm WARN notsup Not compatible with your operating system or architecture: fsevents@1.2.9
 ```
+
 
