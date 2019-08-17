@@ -1,4 +1,4 @@
-* Infranodus is a text-to-network-graph system. Here is how to install it
+### Infranodus is a text-to-network-graph system. Here is how to install it
 
 On my WSL 2 Ubuntu 18.04, apache2 is already installed
 
@@ -10,6 +10,23 @@ sudo service apache2 start
 ```
 Install Node
 ```
-sudo apt install nodejs                                                                                                                   
+sudo apt install nodejs
+```
+make a directory and cd into it and then
+```
+git clone https://github.com/noduslabs/infranodus.git
+```
+Create and edit config.json with this:
+```JSON
+  {
+      "neo4j":  {
+          "host": "localhost:7474",
+          "username": "",
+          "password": ""
+      },
+      "secrets": {
+          "invitation": "invite_code"
+      }
+  }
 ```
 
