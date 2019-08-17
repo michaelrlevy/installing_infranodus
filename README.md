@@ -37,6 +37,11 @@ And then to start the server, it's
 ```
 bin/neo4j start
 ```
+Test it's running by this with your browser
+```
+http://localhost:7474/browser/
+```
+
 
 Installing neo4j I had some problems and could fix it only through steps in https://askubuntu.com/questions/1044449/install-neo4j-ubuntu-18-04
 ```
