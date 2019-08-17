@@ -29,4 +29,11 @@ Create and edit config.json with this:
       }
   }
 ```
+On my WSL 2 Ubuntu 18.04, I already have Java OpenJDK instaled, version 10.0.2
 
+Note there is a slight bug in the Infranodus install docs; the cd ~ and the wget should be on separate lines
+
+```
+cd ~
+wget http://dist.neo4j.org/neo4j-community-2.0.1-unix.tar.gz tar zxf neo4j-community-2.0.1-unix.tar.gz cd neo4j-community-2.0.1
+```
