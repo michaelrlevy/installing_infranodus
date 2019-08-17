@@ -16,19 +16,8 @@ make a directory and cd into it and then
 ```
 git clone https://github.com/noduslabs/infranodus.git
 ```
-Create and edit config.json with this:
-```JSON
-  {
-      "neo4j":  {
-          "host": "localhost:7474",
-          "username": "",
-          "password": ""
-      },
-      "secrets": {
-          "invitation": "invite_code"
-      }
-  }
-```
+You will find a config.json.sample. Copy or rename it to config.json
+
 On my WSL 2 Ubuntu 18.04, I already have Java OpenJDK instaled, version 10.0.2
 
 Note there is a slight bug in the Infranodus install docs. Where they have 
@@ -55,6 +44,8 @@ After that I could run
 ```
 sudo service neo4j start
 ```
+Note on first running neo4j you'll see a browser interface at http://localhost:7474
+and there the initial user / password is  neo4j / neo4j and you will be prompted to change the password. Do that and then modify config.json in the Infranodus config.json accordingly.
 
 I had to separately install npm
 ```
@@ -76,6 +67,10 @@ I saw some warnings but they are only warnings, not errors
 ```
 npm WARN optional Skipping failed optional dependency /pm2/chokidar/fsevents:
 npm WARN notsup Not compatible with your operating system or architecture: fsevents@1.2.9
+```
+
+```
+npm install
 ```
 
 
