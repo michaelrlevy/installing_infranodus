@@ -54,6 +54,9 @@ Install pm2:
 ```
 npm install pm2@latest -g
 ```
+I saw some warnings but they are only warnings, not errors
+```
+npm WARN optional Skipping failed optional dependency /pm2/chokidar/fsevents:
+npm WARN notsup Not compatible with your operating system or architecture: fsevents@1.2.9
+```
 
-
-And they rely on 
