@@ -37,3 +37,23 @@ And then to start the server, it's
 ```
 bin/neo4j start
 ```
+
+I had to separately install npm
+```
+sudo apt instlal npm
+```
+after which
+```
+npm -v
+```
+results in
+```
+3.5.2
+```
+Install pm2:
+```
+npm install pm2@latest -g
+```
+
+
+And they rely on 
