@@ -73,4 +73,10 @@ npm WARN notsup Not compatible with your operating system or architecture: fseve
 npm install
 ```
 
+Well this is going to need serious editing. I encountered problems with the version of neo4j above. The problems had to do with shutdown problem described here https://github.com/neo4j/neo4j/issues/2364
+
+So I decided I had to install a newer version of neo4j as per:
+
+https://www.digitalocean.com/community/tutorials/how-to-install-neo4j-on-an-ubuntu-vps
+
 
